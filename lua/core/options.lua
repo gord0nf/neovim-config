@@ -15,3 +15,6 @@ vim.opt.softtabstop = 4
 vim.opt.smarttab = true
 
 vim.opt.splitright = true
+
+function is_windows() return package.config:sub(1, 1) == '\\'; end
+vim.opt.shell = is_windows() and 'powershell.exe'
