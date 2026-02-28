@@ -1,4 +1,6 @@
 require("core.autocommands")
 require("core.mappings")
 require("core.options")
+require("core.style")
+require("core.terminal")
 require("lazyvim_config")
